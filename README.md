@@ -15,10 +15,33 @@ View the live demo on GitHub Pages:
 
 ## Features
 
-- Visual learning structure for skill progression
-- Modular design built for future dashboard integration
-- Clean and responsive layout using Bootstrap
-- Separate authentication pages for login, signup, and password recovery
+- Visual learning structure for skill progression  
+- Modular design built for future dashboard integration  
+- Clean and responsive layout using Bootstrap  
+- Separate authentication pages for login, signup, and password recovery  
+
+---
+
+## UI Overview
+
+### Landing Page (`index.html`)
+
+- **Navbar**: A fixed-top dark navbar with links to "About", "Explore Skills", and GitHub. A "Start Roadmap" button leads users to the signup page.
+- **Hero Section**: Split layout with a bold headline on the left and an animated strip interface on the right showcasing trending skills like Graphic Design and Branding.
+- **Features Section**: Three highlighted cards displaying Skill Search, Drag & Drop Roadmap, and Export options.
+- **How It Works**: A visual 3-step guide – Choose a skill → Arrange modules → Track progress.
+- **Popular Roadmaps**: Cards for trending paths like Frontend Developer, Digital Illustrator, and AI Fundamentals.
+- **Customization Section**: Interactive demo area where users can drag modules, switch theme colors, and simulate customization.
+- **Newsletter Section**: Email signup form for staying updated.
+- **Footer**: Includes brand description, quick links, resources, legal info, and social icons.
+
+### Authentication Pages
+
+- **Signup Page**: Clean form with fields for user name, email, and password.
+- **Login Page**: Standard email/password form with a link to reset password.
+- **Forgot Password Page**: Simple email input to initiate password reset.
+
+Each page is responsive, mobile-friendly, and styled consistently using Bootstrap 5.
 
 ---
 
@@ -41,8 +64,8 @@ skillmapr/
 
 ## Tech Stack
 
-- HTML5, CSS3, JavaScript
-- Bootstrap 5 for responsive design
+- HTML5, CSS3, JavaScript  
+- Bootstrap 5 for responsive design  
 
 ---
 
@@ -53,7 +76,7 @@ skillmapr/
 git clone https://github.com/hamnaasiif/SkillMapr.git
 cd SkillMapr
 
-2. Open `index.html` in your browser to view the landing page.
+2. Open index.html in your browser to view the landing page.
 
 No build steps are required since this is a static frontend.
 
