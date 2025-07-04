@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillMapr - Map Your Skills, Master Your Path</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top px-4 py-3" style="background-color: #A64848;">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-3" href="#" style="font-family: 'Merriweather', serif;">SkillMapr</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white me-3" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white me-3" href="#explore">Explore Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white me-3" href="#github">GitHub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="signup.html" class="btn btn-outline-light rounded-pill px-4">Start Roadmap</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background-color: #A64848; min-height: 100vh; padding-top: 100px;">
+        <div class="container-fluid h-100">
+            <div class="row h-100 align-items-center">
+                <!-- Left Content -->
+                <div class="col-12 col-md-6 text-white px-5" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold mb-4" style="font-family: 'Georgia', serif; line-height: 1.2;">
+                        Map your skills.<br>
+                        Master your <br>path.
+                    </h1>
+                    <p class="fs-5 mb-4" style="color: #f8f9fa; font-weight: 400;">
+                        Create personalized learning roadmaps.<br>
+                        Track progress. Learn smarter.
+                    </p>
+                    
+                    <a href="signup.html" class="btn btn-light btn-lg rounded-pill px-5 py-3 fw-bold start-now-btn" style="color: #A64848;">Start Now</a>
+                </div>
+                
+                <!-- Right Content - Take What You Need Strip -->
+                <div class="col-12 col-md-6 position-relative" data-aos="fade-left">
+                    <div class="take-what-you-need-container">
+                        <div class="strip-background">
+                            <img src="images/take-what-you-need-bg.png" alt="Take what you need" class="img-fluid">
+                        </div>
+                        <div class="strips-container">
+                            <button class="strip-btn" data-skill="Graphic Design">GRAPHIC DESIGN</button>
+                            <button class="strip-btn" data-skill="Copywriting">COPYWRITING</button>
+                            <button class="strip-btn" data-skill="Web Design">WEB DESIGN</button>
+                            <button class="strip-btn" data-skill="Email Sending">EMAIL SENDING</button>
+                            <button class="strip-btn" data-skill="Copywriting">COPYWRITING</button>
+                            <button class="strip-btn" data-skill="Branding">BRANDING</button>
+                            <button class="strip-btn" data-skill="Content Creating">CONTENT CREATING</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5>Smart Skill Search</h5>
+                            <p>Search any skill and get AI-suggested modules</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5>Drag & Drop Roadmap</h5>
+                            <p>Customize your journey with modular learning</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-file-export"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5>Export & Share</h5>
+                            <p>Export your roadmap as PDF or shareable link</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="how-it-works-container">
+                        <h2 class="how-it-works-title">How It works</h2>
+                        
+                        <div class="steps-container">
+                            <div class="step-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Choose<br>a skill</h4>
+                                </div>
+                            </div>
+                            
+                            <div class="step-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            
+                            <div class="step-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Drag & arrange<br>modules</h4>
+                                </div>
+                            </div>
+                            
+                            <div class="step-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            
+                            <div class="step-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Track progress<br>& export</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Skill Roadmaps Section -->
+    <section class="popular-roadmaps-section">
+        <div class="container px-4 px-md-5">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Popular Skill Roadmaps</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Start your learning journey with our most popular roadmaps</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="roadmap-card" data-roadmap="frontend">
+                        <div class="roadmap-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="roadmap-content">
+                            <h3 class="roadmap-title">Frontend Developer</h3>
+                            <div class="roadmap-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-puzzle-piece"></i>
+                                    <span>8 modules</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>25 h</span>
+                                </div>
+                            </div>
+                            <div class="roadmap-description">
+                                <p>Master HTML, CSS, JavaScript, React and modern frontend development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="roadmap-card" data-roadmap="digital-illustrator">
+                        <div class="roadmap-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="roadmap-content">
+                            <h3 class="roadmap-title">Digital Illustrator</h3>
+                            <div class="roadmap-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-puzzle-piece"></i>
+                                    <span>6 modules</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>15 h</span>
+                                </div>
+                            </div>
+                            <div class="roadmap-description">
+                                <p>Learn digital art, illustration techniques, and design principles</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="roadmap-card" data-roadmap="ai-fundamentals">
+                        <div class="roadmap-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="roadmap-content">
+                            <h3 class="roadmap-title">AI Fundamentals</h3>
+                            <div class="roadmap-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-puzzle-piece"></i>
+                                    <span>10 modules</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>30 h</span>
+                                </div>
+                            </div>
+                            <div class="roadmap-description">
+                                <p>Understand AI concepts, machine learning, and practical applications</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="400">
+                    <button class="btn btn-outline-primary btn-lg px-5 py-3 view-all-btn">
+                        <i class="fas fa-th-large me-2"></i>
+                        View All Roadmaps
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Design Your Way Section -->
+    <section class="design-your-way-section">
+        <div class="container px-4 px-md-5">
+            <div class="row align-items-center">
+                <!-- Left Content -->
+                <div class="col-12 col-lg-6 order-2 order-lg-1" data-aos="fade-right">
+                    <div class="design-content">
+                        <h2 class="design-title">Design it your way</h2>
+                        <p class="design-subtitle">Choose layouts, colors, and fonts to make your roadmap unique</p>
+                        
+                        <div class="customization-features">
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="feature-icon-small">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h5>Custom Themes</h5>
+                                    <p>Pick from 12+ beautiful color schemes or create your own</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="feature-icon-small">
+                                    <i class="fas fa-grip-vertical"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h5>Flexible Layouts</h5>
+                                    <p>Arrange modules in lists, grids, or custom flowcharts</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="feature-icon-small">
+                                    <i class="fas fa-font"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h5>Typography Control</h5>
+                                    <p>Choose from professional fonts to match your style</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Content - Interactive Module Demo -->
+                <div class="col-12 col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+                    <div class="module-demo-container">
+                        <div class="demo-background">
+                            <div class="demo-header">
+                                <h4>Try Customizing!</h4>
+                                <p>Drag and drop modules, change colors, and see how it works — no signup needed.</p>
+                            </div>
+                            
+                            <div class="modules-showcase" id="sortable-modules">
+                                <div class="module-item module-one" data-module="one" draggable="true">
+                                    <span class="module-label">Module One</span>
+                                    <i class="fas fa-grip-lines module-handle"></i>
+                                </div>
+                                
+                                <div class="module-item module-two" data-module="two" draggable="true">
+                                    <span class="module-label">Module Two</span>
+                                    <i class="fas fa-grip-lines module-handle"></i>
+                                </div>
+                                
+                                <div class="module-item module-three" data-module="three" draggable="true">
+                                    <span class="module-label">Module Three</span>
+                                    <i class="fas fa-grip-lines module-handle"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="customization-controls">
+                                <div class="color-picker">
+                                    <div class="color-option active" data-color="red" style="background-color: #A64848;"></div>
+                                    <div class="color-option" data-color="blue" style="background-color: #4A90E2;"></div>
+                                    <div class="color-option" data-color="green" style="background-color: #7ED321;"></div>
+                                    <div class="color-option" data-color="purple" style="background-color: #9013FE;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Newsletter & Footer Section -->
+    <section class="newsletter-section">
+        <div class="container px-4 px-md-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8 text-center">
+                    <div class="newsletter-content" data-aos="fade-up">
+                        <h2 class="newsletter-title">Stay Updated</h2>
+                        <p class="newsletter-subtitle">Get the latest roadmaps, learning tips, and skill insights delivered to your inbox</p>
+                        
+                        <form class="newsletter-form" id="newsletterForm">
+                            <div class="input-group">
+                                <input type="email" class="form-control newsletter-input" placeholder="Enter your email address" required>
+                                <button class="btn newsletter-btn" type="submit">
+                                    <i class="fas fa-paper-plane me-2"></i>
+                                    Subscribe
+                                </button>
+                            </div>
+                        </form>
+                        
+                        <p class="newsletter-disclaimer">No spam, unsubscribe anytime. We respect your privacy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container px-4 px-md-5">
+            <div class="row">
+                <!-- Brand Column -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <h3 class="footer-logo">SkillMapr</h3>
+                        <p class="footer-description">
+                            Empowering learners worldwide with personalized skill roadmaps and interactive learning experiences.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Discord">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="col-6 col-md-3 col-lg-2 mb-4">
+                    <div class="footer-column">
+                        <h5 class="footer-heading">Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#explore">Explore Skills</a></li>
+                            <li><a href="#roadmaps">Roadmaps</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Resources -->
+                <div class="col-6 col-md-3 col-lg-2 mb-4">
+                    <div class="footer-column">
+                        <h5 class="footer-heading">Resources</h5>
+                        <ul class="footer-links">
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#help">Help Center</a></li>
+                            <li><a href="#tutorials">Tutorials</a></li>
+                            <li><a href="#community">Community</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Legal -->
+                <div class="col-12 col-md-12 col-lg-4 mb-4">
+                    <div class="footer-column">
+                        <h5 class="footer-heading">Legal & Support</h5>
+                        <ul class="footer-links">
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                            <li><a href="#terms">Terms of Service</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="#support">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-bottom">
+                        <div class="footer-bottom-content">
+                            <p class="copyright">
+                                © 2024 SkillMapr. All rights reserved. Built with ❤️ for learners worldwide.
+                            </p>
+                            <div class="footer-bottom-links">
+                                <a href="#status">Status</a>
+                                <a href="#api">API</a>
+                                <a href="#careers">Careers</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
